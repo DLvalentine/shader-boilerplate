@@ -8,3 +8,12 @@ canvas {
   display: block;
   background-color: black;
 }
+
+.hideScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hideScroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

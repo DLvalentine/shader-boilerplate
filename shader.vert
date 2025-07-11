@@ -16,7 +16,7 @@ void main() {
   vec4 position = vec4(aPosition, 1.0); // 0 - 1 range of original position from application code
   position.xy = position.xy * 2.0 - 1.0; // normalization magic to make it from -1 - 1 range, which is expected in the vertex shader
 
-  position.y += sin(u_time + position.x * 2.0)/2.0; // example of what we can do to verticies
+  position.y += sin(u_time + position.x * 2.0)/2.0; // example of what we can do to vertices
 
   gl_Position = position; // "output" what the position should be for this vertex
 }
